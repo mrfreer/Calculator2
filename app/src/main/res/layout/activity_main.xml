@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.calculator2.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="373dp"
+        android:layout_height="497dp"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="9dp">
+
+        <EditText
+            android:id="@+id/txtNumber1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="65dp"
+            android:layout_marginRight="65dp"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:inputType="number"
+            tools:text="Number 1" />
+
+        <EditText
+            android:id="@+id/txtNumber2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtNumber1"
+            android:layout_alignStart="@+id/txtNumber1"
+            android:layout_below="@+id/txtNumber1"
+            android:layout_marginTop="29dp"
+            android:ems="10"
+            android:inputType="textNoSuggestions|number"
+            tools:text="Number 2" />
+
+        <Button
+            android:id="@+id/onButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtNumber2"
+            android:layout_alignRight="@+id/txtNumber2"
+            android:layout_below="@+id/txtNumber2"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="57dp"
+            android:onClick="onButtonClick"
+            android:text="Addition" />
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/onButton"
+            android:layout_alignRight="@+id/onButton"
+            android:layout_below="@+id/onButton"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginTop="42dp"
+            android:text="Result"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtNumber2"
+            android:layout_alignBottom="@+id/txtNumber2"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4"
+            android:text="Number:" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtNumber1"
+            android:layout_alignBottom="@+id/txtNumber1"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            android:layout_toLeftOf="@+id/txtNumber2"
+            android:layout_toStartOf="@+id/txtNumber2"
+            android:text="Number:" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/onButton"
+            android:layout_toLeftOf="@+id/onButton"
+            android:layout_toStartOf="@+id/onButton"
+            android:onClick="subtractClick"
+            android:text="Subtract" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
